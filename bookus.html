@@ -1,80 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Book Us | IslamDebunked</title>
-  <link rel="icon" href="logo.png" type="image/png" />
-  <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book Us — What Is Your Evidence</title>
+<meta name="description" content="Request a speaker for your church, university, conference, or event. We engage the gospel, apologetics, and the evidence — in person.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/style.css">
 </head>
-<body class="bg-green-50 text-gray-800 font-sans">
+<body>
 
-  <!-- Header -->
-  <header class="bg-white shadow">
-    <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
-      <div>
-        <a href="index.html">
-          <img src="logo.png" alt="Christian Caliphate Logo" class="h-20">
-        </a>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="index.html" aria-label="What Is Your Evidence — home">
+      <svg viewBox="0 0 320 96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g transform="translate(8, 12)" fill="none" stroke="currentColor">
+          <circle cx="34" cy="34" r="28" stroke-width="2.4"/>
+          <line x1="55" y1="55" x2="68" y2="68" stroke-width="4" stroke-linecap="round"/>
+          <text x="34" y="50" text-anchor="middle" fill="currentColor" stroke="none" style="font-family: Fraunces, 'Times New Roman', serif; font-weight: 600; font-style: italic; font-size: 44px;">?</text>
+          <circle cx="34" cy="56" r="2.2" fill="#B8252B" stroke="none"/>
+        </g>
+        <g transform="translate(96, 0)" fill="currentColor">
+          <text x="0" y="36" style="font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.32em;">WHAT IS YOUR</text>
+          <text x="-1" y="68" style="font-family: Fraunces, 'Times New Roman', serif; font-weight: 600; font-size: 28px;">Evidence<tspan fill="#B8252B">.</tspan></text>
+        </g>
+      </svg>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu <span class="nav-toggle__icon"></span></button>
+    <nav class="nav" id="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About</a>
+      <a href="resources.html">Resources</a>
+      <div class="nav__dropdown" data-nav-dropdown>
+        <a href="polemics.html" class="nav__trigger" aria-haspopup="true">Polemics<svg class="nav__caret" width="9" height="9" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 4l3 3 3-3"/></svg></a>
+        <div class="nav__menu" role="menu">
+          <a href="polemics.html" class="nav__menu-hub" role="menuitem">All polemics &nbsp;<span aria-hidden="true">→</span></a>
+          <div class="nav__menu-group">
+            <span class="nav__menu-eyebrow">Islam</span>
+            <a href="variants.html" role="menuitem">Qur&rsquo;ānic Variants</a>
+          </div>
+        </div>
       </div>
+      <a href="https://whatisyourevidence.substack.com/" target="_blank" rel="noopener">Substack</a>
+      <a href="shop.html">Shop</a>
+      <a href="bookus.html" class="is-active">Book Us</a>
+      <a href="supportus.html" class="cta">Support</a>
+    </nav>
+  </div>
+</header>
 
-      <div class="flex items-center space-x-4">
-        <nav class="space-x-4">
-          <a href="index.html" class="text-green-700">Home</a>
-          <a href="aboutus.html" class="text-green-700">About Us</a>
-          <a href="resources.html" class="text-green-700">Resources</a>
-          <a href="variants.html" class="text-green-700">Variants</a>
-          <a href="shop.html" class="text-green-700">Shop</a>
+<section class="page-header">
+  <div class="container">
+    <span class="eyebrow page-header__eyebrow" data-reveal>Speaking &middot; Debate &middot; Teaching</span>
+    <h1 data-reveal style="--reveal-delay: 100ms;">Book us for your <em class="serif-italic">event</em>.</h1>
+    <p class="page-header__lead" data-reveal style="--reveal-delay: 200ms;">
+      Churches. Universities. Conferences. Public dialogues. We come prepared, we cite our sources, and we let the audience scrutinise the case.
+    </p>
+  </div>
+</section>
 
-          <!-- Current Page Highlight -->
-          <a href="bookus.html" class="text-green-700 font-bold">Book Us</a>
+<section class="article">
+  <div class="container container--narrow">
 
-          <a href="supportus.html" class="bg-yellow-400 text-gray-900 font-semibold px-4 py-2 rounded hover:bg-yellow-500 transition">
-            Support Us
-          </a>
-        </nav>
+    <div class="book-cta" data-reveal>
+      <div>
+        <span class="eyebrow">Step 1</span>
+        <h3 style="margin-top: 16px;">Submit a request</h3>
+        <p>Use the Google form to share event type, audience size, location, dates, and topic. The more specific you are, the faster we can confirm.</p>
+      </div>
+      <div class="book-cta__action">
+        <a class="btn btn--blood" href="https://forms.gle/CS19q3n3eRPaGxqw9" target="_blank" rel="noopener">
+          Open the request form
+          <svg class="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5"/></svg>
+        </a>
+        <a class="btn btn--ghost" href="mailto:whatyourevidence@gmail.com">Email instead</a>
       </div>
     </div>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="bg-green-100 text-center py-20">
-    <h2 class="text-4xl font-bold text-green-800">Book Us for Your Event</h2>
-    <p class="mt-4 text-lg text-gray-700">We are available to speak at churches, universities, conferences, and other events. Fill out the form below to request a speaker.</p>
-  </section>
+    <div data-reveal style="margin-top: 56px;">
+      <span class="eyebrow">What we cover</span>
+      <h3 style="margin-top: 18px;">Topics we&rsquo;ve been booked for</h3>
 
-  <!-- Booking Info / Call to Action -->
-  <section class="py-16 px-4 max-w-4xl mx-auto text-center">
-    <h3 class="text-3xl font-semibold text-green-800 mb-6">How to Book a Speaker</h3>
-    <p class="text-lg text-gray-700 mb-4">
-      Please use our Google Form to submit your request. Include all relevant details such as the type of event, audience size, location, and who you would like to speak. This helps us prepare and ensure a meaningful experience.
-    </p>
+      <ul class="checklist">
+        <li>The historical case for the resurrection of Jesus</li>
+        <li>Qur&rsquo;ānic textual variants &amp; transmission</li>
+        <li>Christianity vs Islam: God, Jesus, salvation</li>
+        <li>Non-Christian sources for Jesus, AD 1–200</li>
+        <li>Sharing the gospel with Muslim friends</li>
+        <li>Open Q&amp;A &amp; moderated dialogue</li>
+      </ul>
+    </div>
 
-    <!-- Google Form Button -->
-    <a href="https://forms.gle/CS19q3n3eRPaGxqw9" target="_blank"
-       class="bg-purple-600 text-white font-semibold px-6 py-4 rounded-lg hover:bg-purple-700 transition">
-       Fill Out Event Signup Form
-    </a>
-  </section>
+    <div data-reveal style="margin-top: 56px;">
+      <span class="eyebrow">Logistics</span>
+      <h3 style="margin-top: 18px;">Honorarium &amp; travel</h3>
+      <p style="color: var(--ink-mute); font-size: 17px; line-height: 1.6;">
+        For questions about availability, honorarium, travel logistics, or moderated debates, contact us directly at <a href="mailto:whatyourevidence@gmail.com" style="color: var(--blood); text-decoration: underline; text-underline-offset: 3px;">whatyourevidence@gmail.com</a>. We look forward to partnering with you to share the gospel — clearly, charitably, and with evidence.
+      </p>
+    </div>
+  </div>
+</section>
 
-  <!-- Optional Additional Info Section -->
-  <section class="py-16 px-4 max-w-4xl mx-auto">
-    <h3 class="text-3xl font-semibold text-green-800 mb-6 text-center">Additional Information</h3>
-    <p class="text-lg text-gray-700">
-      For questions about speaking availability, honorarium, or travel logistics, please contact us directly at 
-      <a href="mailto:whatyourevidence@gmail.com" class="underline text-green-700">whatyourevidence@gmail.com</a>. 
-      We look forward to partnering with you to share the gospel effectively.
-    </p>
-  </section>
+<section class="cta">
+  <div class="container">
+    <div class="cta__grid" data-reveal>
+      <h2>Looking for a <em>moderated debate?</em></h2>
+      <div>
+        <p>If you represent a counter-position and want to engage formally, we welcome it. Public, recorded, with a moderator and time limits. Bring your evidence; we&rsquo;ll bring ours.</p>
+        <div class="btn-row">
+          <a class="btn btn--blood" href="mailto:whatyourevidence@gmail.com?subject=Debate%20request">Propose a debate
+            <svg class="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="bg-green-800 text-white py-8 text-center">
-    <p class="text-lg">“Go therefore and make disciples of all nations...” — Matthew 28:19</p>
-    <p class="mt-4 text-sm">
-      📧 Contact: <a href="mailto:whatyourevidence@gmail.com" class="underline hover:text-gray-200">whatyourevidence@gmail.com</a>
-    </p>
-    <p class="mt-2 text-xs text-gray-200">&copy; 2026 Christian Caliphate. All rights reserved.</p>
-  </footer>
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <a class="brand" href="index.html" aria-label="What Is Your Evidence — home">
+          <svg viewBox="0 0 320 96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g transform="translate(8, 12)" fill="none" stroke="currentColor">
+          <circle cx="34" cy="34" r="28" stroke-width="2.4"/>
+          <line x1="55" y1="55" x2="68" y2="68" stroke-width="4" stroke-linecap="round"/>
+          <text x="34" y="50" text-anchor="middle" fill="currentColor" stroke="none" style="font-family: Fraunces, 'Times New Roman', serif; font-weight: 600; font-style: italic; font-size: 44px;">?</text>
+          <circle cx="34" cy="56" r="2.2" fill="#B8252B" stroke="none"/>
+        </g>
+        <g transform="translate(96, 0)" fill="currentColor">
+          <text x="0" y="36" style="font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.32em;">WHAT IS YOUR</text>
+          <text x="-1" y="68" style="font-family: Fraunces, 'Times New Roman', serif; font-weight: 600; font-size: 28px;">Evidence<tspan fill="#B8252B">.</tspan></text>
+        </g>
+      </svg>
+        </a>
+        <p class="site-footer__motto">
+          &ldquo;Test everything; hold fast what is good.&rdquo;
+          <cite>— 1 Thessalonians 5:21</cite>
+        </p>
+      </div>
 
+      <div>
+        <h5>Pages</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="polemics.html">Polemics</a></li>
+          <li><a href="variants.html">Qur&rsquo;ānic Variants</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5>Engage</h5>
+        <ul>
+          <li><a href="https://whatisyourevidence.substack.com/" target="_blank" rel="noopener">Substack</a></li>
+          <li><a href="bookus.html">Book us</a></li>
+          <li><a href="supportus.html">Support</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="mailto:whatyourevidence@gmail.com">whatyourevidence@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom">
+      <span>&copy; 2026 What Is Your Evidence</span>
+      <span>Soli Deo Gloria</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
 </body>
 </html>

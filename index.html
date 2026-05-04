@@ -1,190 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | IslamDebunked</title>
-  <link rel="icon" href="logo.png" type="image/png" />
-  <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Is Your Evidence — Christian Apologetics &amp; Polemics. Primary-Source Evidence.</title>
+<meta name="description" content="Every assertion is tested. Every belief is held accountable. We go straight to primary sources, history, and Scripture — and let the evidence speak.">
+<meta property="og:title" content="What Is Your Evidence">
+<meta property="og:description" content="Christian apologetics and polemics. Primary sources, history, and Scripture — let the evidence speak.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://whatisyourevidence.com/">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/style.css">
 </head>
-<body class="bg-green-50 text-gray-800 font-sans">
+<body>
 
-  <!-- Header -->
-  <header class="bg-white shadow">
-    <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
+<!-- Header -->
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="index.html" aria-label="What Is Your Evidence — home">
+      <svg viewBox="0 0 320 96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g transform="translate(8, 12)" fill="none" stroke="currentColor">
+          <circle cx="34" cy="34" r="28" stroke-width="2.4"/>
+          <line x1="55" y1="55" x2="68" y2="68" stroke-width="4" stroke-linecap="round"/>
+          <text x="34" y="50" text-anchor="middle" fill="currentColor" stroke="none" style="font-family: Fraunces, 'Times New Roman', serif; font-weight: 600; font-style: italic; font-size: 44px;">?</text>
+          <circle cx="34" cy="56" r="2.2" fill="#B8252B" stroke="none"/>
+        </g>
+        <g transform="translate(96, 0)" fill="currentColor">
+          <text x="0" y="36" style="font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.32em;">WHAT IS YOUR</text>
+          <text x="-1" y="68" style="font-family: Fraunces, 'Times New Roman', serif; font-weight: 600; font-size: 28px;">Evidence<tspan fill="#B8252B">.</tspan></text>
+        </g>
+      </svg>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu <span class="nav-toggle__icon"></span></button>
+    <nav class="nav" id="primary-nav">
+      <a href="index.html" class="is-active">Home</a>
+      <a href="aboutus.html">About</a>
+      <a href="resources.html">Resources</a>
+      <div class="nav__dropdown" data-nav-dropdown>
+        <a href="polemics.html" class="nav__trigger" aria-haspopup="true">Polemics<svg class="nav__caret" width="9" height="9" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 4l3 3 3-3"/></svg></a>
+        <div class="nav__menu" role="menu">
+          <a href="polemics.html" class="nav__menu-hub" role="menuitem">All polemics &nbsp;<span aria-hidden="true">→</span></a>
+          <div class="nav__menu-group">
+            <span class="nav__menu-eyebrow">Islam</span>
+            <a href="variants.html" role="menuitem">Qur&rsquo;ānic Variants</a>
+          </div>
+        </div>
+      </div>
+      <a href="https://whatisyourevidence.substack.com/" target="_blank" rel="noopener">Substack</a>
+      <a href="shop.html">Shop</a>
+      <a href="bookus.html">Book Us</a>
+      <a href="supportus.html" class="cta">Support</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container hero__inner">
+    <div data-reveal style="--reveal-delay: 0ms;">
+      <span class="eyebrow hero__eyebrow">Christian Apologetics &amp; Polemics</span>
+    </div>
+    <h1 class="hero__title" data-reveal style="--reveal-delay: 120ms;">
+      Every assertion is tested.<br>
+      Every belief is <em>held</em> <span class="blood">accountable.</span>
+    </h1>
+    <p class="hero__lead" data-reveal style="--reveal-delay: 240ms;">
+      No fluff. No slogans. No blind faith. We go straight to primary sources, history, and Scripture — and we let the evidence speak. If a worldview collapses under scrutiny, it deserves to fall. If Jesus is Lord, He will stand.
+    </p>
+    <div class="hero__actions" data-reveal style="--reveal-delay: 360ms;">
+      <a class="btn btn--blood" href="resources.html">
+        Examine the Evidence
+        <svg class="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5"/></svg>
+      </a>
+      <a class="btn" href="aboutus.html">Read the Manifesto</a>
+    </div>
+
+    <div class="hero__meta" data-reveal style="--reveal-delay: 540ms;">
+      <div class="hero__meta-item">
+        <strong>Test everything</strong>
+        Hold fast what is good
+      </div>
+      <div class="hero__meta-item">
+        <strong>Apologetics &amp; polemics</strong>
+        Defend the faith. Engage the strongest counter-claim
+      </div>
+      <div class="hero__meta-item">
+        <strong>Bring your evidence</strong>
+        Disagree? Prove it
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Manifesto -->
+<section class="manifesto" id="manifesto">
+  <div class="container">
+    <div class="manifesto__grid">
+      <aside class="manifesto__sidebar" data-reveal>
+        <span class="eyebrow">Position</span>
+        <h4>This site confronts claims, not feelings.</h4>
+        <p>What follows is the working creed of this ministry — the lens through which every page, every footnote, and every claim is measured.</p>
+      </aside>
+
+      <div class="manifesto__body">
+        <p class="statement" data-reveal>
+          Every assertion is tested. <em>Every belief is held accountable.</em>
+        </p>
+
+        <p data-reveal>
+          In obedience to <strong>2 Corinthians 10:5 (NASB)</strong>:
+        </p>
+
+        <blockquote class="scripture" data-reveal>
+          We are destroying speculations and every lofty thing raised up against the knowledge of God, and we are taking every thought captive to the obedience of Christ.
+          <cite>— 2 Corinthians 10:5</cite>
+        </blockquote>
+
+        <p data-reveal>
+          In the spirit of <strong>1 Kings 18:21</strong>, we reject fence-sitting. Truth demands a decision.
+        </p>
+
+        <p data-reveal>We do this because of Christ&rsquo;s love:</p>
+
+        <blockquote class="scripture" data-reveal>
+          The Son of God&hellip; loved me and gave Himself up for me.
+          <cite>— Galatians 2:20</cite>
+        </blockquote>
+
+        <p data-reveal>And we are unapologetic about evidence:</p>
+
+        <blockquote class="scripture" data-reveal>
+          If Christ has not been raised, our preaching is useless and so is your faith.
+          <cite>— 1 Corinthians 15:14</cite>
+        </blockquote>
+
+        <p class="statement" data-reveal>No fluff. No slogans. No blind faith.</p>
+
+        <p data-reveal>
+          We go straight to primary sources, history, and Scripture — and we let the evidence speak. If we make a claim and you think it&rsquo;s wrong, prove it. No complaints. No deflections. <strong>Bring your evidence.</strong>
+        </p>
+
+        <hr>
+
+        <p class="statement" data-reveal>
+          If a worldview collapses under scrutiny, it deserves to fall.<br>
+          <em>If Jesus is Lord, He will stand.</em>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- What we investigate -->
+<section class="investigate">
+  <div class="container">
+    <div class="investigate__head" data-reveal>
       <div>
-        <a href="index.html">
-          <img src="logo.png" alt="Christian Caliphate Logo" class="h-20">
+        <span class="eyebrow">The Casework</span>
+        <h2 style="margin-top: 18px;">What we <em>investigate</em>.</h2>
+      </div>
+      <p>Each line of inquiry is documented, sourced, and open to challenge. The evidence travels with you.</p>
+    </div>
+
+    <div class="cards">
+      <a class="card" href="variants.html" data-reveal style="--reveal-delay: 0ms;">
+        <div class="card__num">— 01 / Manuscripts</div>
+        <h3 class="card__title">Qur&rsquo;ānic <em>variant</em> evidence.</h3>
+        <p class="card__body">Side-by-side documentation of Ḥafṣ vs. Warsh and other transmission-line differences. Manuscript folios, not soundbites.</p>
+        <span class="card__link">View variants
+          <svg width="12" height="12" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5"/></svg>
+        </span>
+      </a>
+
+      <a class="card" href="resources.html" data-reveal style="--reveal-delay: 120ms;">
+        <div class="card__num">— 02 / History</div>
+        <h3 class="card__title">Non-Christian sources on <em>Jesus</em>.</h3>
+        <p class="card__body">Tacitus, Josephus, Pliny, the Talmud, and more. What hostile and indifferent writers in the first two centuries say about the Nazarene.</p>
+        <span class="card__link">Open the dossier
+          <svg width="12" height="12" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5"/></svg>
+        </span>
+      </a>
+
+      <a class="card" href="resources.html" data-reveal style="--reveal-delay: 240ms;">
+        <div class="card__num">— 03 / Doctrine</div>
+        <h3 class="card__title">The Qur&rsquo;ān <em>or</em> the Bible?</h3>
+        <p class="card__body">A side-by-side gospel tract: who Jesus is, what salvation is, and how the two books answer the question that decides eternity.</p>
+        <span class="card__link">Read the tract
+          <svg width="12" height="12" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5"/></svg>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Featured carousel -->
+<section class="featured">
+  <div class="container">
+    <div class="featured__head" data-reveal>
+      <div>
+        <span class="eyebrow">From the Archive</span>
+        <h2 style="margin-top: 18px;">Featured&nbsp;<em class="serif-italic">work</em>.</h2>
+      </div>
+      <div class="featured__controls">
+        <button class="featured__btn" data-featured-prev aria-label="Previous">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 7H2M7 2 2 7l5 5"/></svg>
+        </button>
+        <button class="featured__btn" data-featured-next aria-label="Next">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="featured__track-wrap">
+      <div class="featured__track" data-reveal>
+        <figure class="featured__item"><img src="featured/image1.jpg" alt="Featured graphic 1" loading="lazy"></figure>
+        <figure class="featured__item"><img src="featured/image2.jpg" alt="Featured graphic 2" loading="lazy"></figure>
+        <figure class="featured__item"><img src="featured/image3.jpg" alt="Featured graphic 3" loading="lazy"></figure>
+        <figure class="featured__item"><img src="featured/image4.jpg" alt="Featured graphic 4" loading="lazy"></figure>
+        <figure class="featured__item"><img src="featured/image5.jpg" alt="Featured graphic 5" loading="lazy"></figure>
+        <figure class="featured__item"><img src="featured/image5.1.jpg" alt="Featured graphic 5.1" loading="lazy"></figure>
+        <figure class="featured__item"><img src="featured/image6.jpg" alt="Featured graphic 6" loading="lazy"></figure>
+        <figure class="featured__item"><img src="featured/image7.jpg" alt="Featured graphic 7" loading="lazy"></figure>
+        <figure class="featured__item"><img src="featured/image8.jpg" alt="Featured graphic 8" loading="lazy"></figure>
+        <figure class="featured__item"><img src="featured/image9.jpg" alt="Featured graphic 9" loading="lazy"></figure>
+        <figure class="featured__item"><img src="featured/image10.jpg" alt="Featured graphic 10" loading="lazy"></figure>
+        <figure class="featured__item"><img src="featured/image11.png" alt="Featured graphic 11" loading="lazy"></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Substack -->
+<section class="substack" id="substack">
+  <div class="container">
+    <div class="substack__grid" data-reveal>
+      <div class="substack__copy">
+        <span class="eyebrow">The Newsletter</span>
+        <h2 class="substack__title">Long-form on <em class="serif-italic">Substack</em>.</h2>
+        <p class="substack__lead">Deeper essays, primary-source dossiers, and ongoing case files — straight to your inbox. No noise. No clickbait. Evidence.</p>
+      </div>
+      <div class="substack__panel">
+        <div class="substack__pulse">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg>
+          <span>Substack</span>
+        </div>
+        <p class="substack__pitch">New essays land most weeks. Subscribe and read at your own pace.</p>
+        <a class="btn btn--blood" href="https://whatisyourevidence.substack.com/" target="_blank" rel="noopener">
+          Subscribe on Substack
+          <svg class="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5"/></svg>
         </a>
+        <p class="substack__note">Free. Unsubscribe anytime.</p>
       </div>
-      <div class="flex items-center space-x-4">
-        <nav class="space-x-4">
-          <a href="index.html" class="text-green-700 font-bold">Home</a>
-          <a href="aboutus.html" class="text-green-700">About Us</a>
-          <a href="resources.html" class="text-green-700">Resources</a>
-          <a href="variants.html" class="text-green-700">Variants</a>
-          <a href="shop.html" class="text-green-700">Shop</a>
-          <a href="bookus.html" class="text-green-700">Book Us</a>
-          <a href="supportus.html" class="bg-yellow-400 text-gray-900 font-semibold px-4 py-2 rounded hover:bg-yellow-500 transition">
-            Support Us
+    </div>
+  </div>
+</section>
+
+<!-- Closing CTA -->
+<section class="cta">
+  <div class="container">
+    <div class="cta__grid" data-reveal>
+      <h2>Disagree? <em>Bring your evidence.</em></h2>
+      <div>
+        <p>Speaking, debate, or written response — we welcome scrutiny. No complaints. No deflections. If we&rsquo;re wrong, prove it. If we&rsquo;re right, follow the evidence.</p>
+        <div class="btn-row">
+          <a class="btn btn--blood" href="bookus.html">Book us
+            <svg class="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5"/></svg>
           </a>
-        </nav>
-      </div>
-    </div>
-  </header>
-
-  <!-- Featured Slideshow -->
-  <section class="py-8">
-    <div class="max-w-6xl mx-auto relative flex justify-center items-center h-80">
-      <!-- Blurred Previous -->
-      <img id="prev-slide" class="absolute left-0 w-1/4 h-80 object-cover filter blur-sm opacity-50 z-10">
-
-      <!-- Main Slide -->
-      <div id="slideshow" class="w-1/2 h-80 overflow-hidden relative z-20 flex items-center justify-center rounded-lg shadow-lg bg-green-100">
-        <img id="main-slide" class="w-full h-full object-contain" src="featured/image1.jpg" alt="Main">
-      </div>
-
-      <!-- Blurred Next -->
-      <img id="next-slide" class="absolute right-0 w-1/4 h-80 object-cover filter blur-sm opacity-50 z-10">
-
-      <!-- Navigation Buttons -->
-      <button id="prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-green-700 text-white px-3 py-2 rounded-r hover:bg-green-800 z-30">❮</button>
-      <button id="next" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-green-700 text-white px-3 py-2 rounded-l hover:bg-green-800 z-30">❯</button>
-
-      </div>
-  </section>
-
-  <!-- Hero Section -->
-  <section class="bg-green-100 text-center py-20">
-    <h2 class="text-4xl font-bold text-green-800">Understanding Islam Through a Christian Lens</h2>
-    <p class="mt-4 text-lg text-gray-700">Engaging Muslims with truth, compassion, and the gospel of Jesus Christ.</p>
-  </section>
-
-  <!-- Islam Overview -->
-  <section class="py-16 px-4 max-w-4xl mx-auto">
-    <h3 class="text-3xl font-semibold text-green-800 mb-6">What Do Muslims Believe?</h3>
-    <p class="text-lg text-gray-700 mb-4">
-      Islam teaches that there is only one God (Allah), and Muhammad is His final prophet. Muslims believe in the Qur’an as their holy book and follow the Five Pillars of Islam, which include confession of faith (shahada), prayer, fasting during Ramadan, almsgiving, and pilgrimage to Mecca.
-    </p>
-    <p class="text-lg text-gray-700 mb-4">
-      While Christians and Muslims share belief in one God, significant differences exist, especially concerning the nature of God, Jesus, salvation, and Scripture. Islam denies the Trinity, the divinity of Jesus, and His atoning death and resurrection.
-    </p>
-    <p class="text-lg text-gray-700">
-      As Christians, we are called to lovingly and truthfully share the gospel with Muslims, demonstrating that Jesus is not just a prophet, but the Son of God, Savior, and Lord of all (John 14:6).
-    </p>
-  </section>
-
-  <!-- Key Differences Section -->
-  <section class="bg-white py-16 px-4">
-    <div class="max-w-6xl mx-auto">
-      <h3 class="text-3xl font-semibold text-green-800 mb-10 text-center">Key Differences Between Christianity and Islam</h3>
-      <div class="grid gap-6 md:grid-cols-3">
-        <div class="bg-green-50 p-6 rounded-lg shadow hover:shadow-lg transition">
-          <h4 class="text-xl font-bold text-green-700 mb-2">God's Nature</h4>
-          <p class="text-gray-700">Christianity teaches God is triune—Father, Son, and Holy Spirit. Islam affirms a strict monotheism and rejects the Trinity.</p>
-        </div>
-        <div class="bg-green-50 p-6 rounded-lg shadow hover:shadow-lg transition">
-          <h4 class="text-xl font-bold text-green-700 mb-2">Jesus Christ</h4>
-          <p class="text-gray-700">Christians believe Jesus is the Son of God and Savior. Islam views Him as a prophet and denies His crucifixion and resurrection.</p>
-        </div>
-        <div class="bg-green-50 p-6 rounded-lg shadow hover:shadow-lg transition">
-          <h4 class="text-xl font-bold text-green-700 mb-2">Salvation</h4>
-          <p class="text-gray-700">Salvation in Christianity is by grace through faith in Christ. In Islam, salvation is based on deeds and Allah's mercy.</p>
+          <a class="btn" href="mailto:whatyourevidence@gmail.com">Send a challenge</a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Evangelism Section -->
-  <section class="py-16 px-4 max-w-4xl mx-auto text-center">
-    <h3 class="text-3xl font-semibold text-green-800 mb-6">Sharing the Gospel with Muslims</h3>
-    <p class="text-lg text-gray-700 mb-4">
-      Effective outreach to Muslims requires a balance of truth and grace. Learn their beliefs, ask thoughtful questions, and focus on Jesus—His love, identity, and the hope He offers.
-    </p>
-    <p class="text-lg text-gray-700">
-      As Paul said, “I have become all things to all people so that by all possible means I might save some.” — <strong>1 Corinthians 9:22</strong>
-    </p>
-  </section>
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <a class="brand" href="index.html" aria-label="What Is Your Evidence — home">
+          <svg viewBox="0 0 320 96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g transform="translate(8, 12)" fill="none" stroke="currentColor">
+          <circle cx="34" cy="34" r="28" stroke-width="2.4"/>
+          <line x1="55" y1="55" x2="68" y2="68" stroke-width="4" stroke-linecap="round"/>
+          <text x="34" y="50" text-anchor="middle" fill="currentColor" stroke="none" style="font-family: Fraunces, 'Times New Roman', serif; font-weight: 600; font-style: italic; font-size: 44px;">?</text>
+          <circle cx="34" cy="56" r="2.2" fill="#B8252B" stroke="none"/>
+        </g>
+        <g transform="translate(96, 0)" fill="currentColor">
+          <text x="0" y="36" style="font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.32em;">WHAT IS YOUR</text>
+          <text x="-1" y="68" style="font-family: Fraunces, 'Times New Roman', serif; font-weight: 600; font-size: 28px;">Evidence<tspan fill="#B8252B">.</tspan></text>
+        </g>
+      </svg>
+        </a>
+        <p class="site-footer__motto">
+          &ldquo;Test everything; hold fast what is good.&rdquo;
+          <cite>— 1 Thessalonians 5:21</cite>
+        </p>
+      </div>
 
-  <!-- Footer -->
-  <footer class="bg-green-800 text-white py-8 text-center">
-    <p class="text-lg">“Go therefore and make disciples of all nations...” — Matthew 28:19</p>
-    <p class="mt-4 text-sm">
-      📧 Contact: <a href="mailto:whatyourevidence@gmail.com" class="underline hover:text-gray-200">whatyourevidence@gmail.com</a>
-    </p>
-    <p class="mt-2 text-xs text-gray-200">&copy; 2026 IslamDebunked.com. All rights reserved.</p>
-  </footer>
+      <div>
+        <h5>Pages</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="polemics.html">Polemics</a></li>
+          <li><a href="variants.html">Qur&rsquo;ānic Variants</a></li>
+        </ul>
+      </div>
 
-  <!-- Slideshow Script -->
-  <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const images = [
-      'featured/image1.jpg',
-      'featured/image2.jpg',
-      'featured/image3.jpg',
-      'featured/image4.jpg',
-      'featured/image5.1.jpg',
-      'featured/image5.jpg',
-      'featured/image6.jpg',
-      'featured/image7.jpg',
-      'featured/image8.jpg',
-      'featured/image9.jpg',
-      'featured/image10.jpg',
-      'featured/image11.png'
-    ];
+      <div>
+        <h5>Engage</h5>
+        <ul>
+          <li><a href="https://whatisyourevidence.substack.com/" target="_blank" rel="noopener">Substack</a></li>
+          <li><a href="bookus.html">Book us</a></li>
+          <li><a href="supportus.html">Support</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="mailto:whatyourevidence@gmail.com">whatyourevidence@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
 
-    let index = 0;
-    let playing = true;
-    let interval = setInterval(nextSlide, 5000);
+    <div class="site-footer__bottom">
+      <span>&copy; 2026 What Is Your Evidence</span>
+      <span>Soli Deo Gloria</span>
+    </div>
+  </div>
+</footer>
 
-    const main = document.getElementById('main-slide');
-    const prev = document.getElementById('prev-slide');
-    const next = document.getElementById('next-slide');
-    const pauseBtn = document.getElementById('pause');
-
-    function updateSlides() {
-      main.src = images[index];
-      prev.src = images[(index - 1 + images.length) % images.length];
-      next.src = images[(index + 1) % images.length];
-    }
-
-    function nextSlide() {
-      index = (index + 1) % images.length;
-      updateSlides();
-    }
-
-    function prevSlide() {
-      index = (index - 1 + images.length) % images.length;
-      updateSlides();
-    }
-
-    document.getElementById('next').addEventListener('click', () => {
-      nextSlide();
-      resetInterval();
-    });
-
-    document.getElementById('prev').addEventListener('click', () => {
-      prevSlide();
-      resetInterval();
-    });
-
-    pauseBtn.addEventListener('click', () => {
-      playing = !playing;
-      pauseBtn.textContent = playing ? 'Pause' : 'Play';
-      if (playing) interval = setInterval(nextSlide, 5000);
-      else clearInterval(interval);
-    });
-
-    function resetInterval() {
-      if (playing) {
-        clearInterval(interval);
-        interval = setInterval(nextSlide, 5000);
-      }
-    }
-
-    updateSlides();
-  });
-  </script>
-
+<script src="assets/main.js"></script>
 </body>
 </html>

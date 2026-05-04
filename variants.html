@@ -1,177 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Christian Caliphate - Qur'an Variants</title>
-  <link rel="icon" href="logo.png" type="image/png" />
-  <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qur&rsquo;ānic Variants — What Is Your Evidence</title>
+<meta name="description" content="Manuscript-level documentation of textual variants between Ḥafṣ and Warsh transmission lines, plus other Qur'ānic variant readings.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/style.css">
 </head>
+<body>
 
-<body class="bg-green-50 text-gray-800 font-sans">
-
-  <!-- Header -->
-  <header class="bg-white shadow">
-    <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
-      <!-- Logo Image -->
-      <div>
-        <a href="index.html">
-          <img src="logo.png" alt="Christian Caliphate Logo" class="h-20">
-        </a>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="index.html" aria-label="What Is Your Evidence — home">
+      <svg viewBox="0 0 320 96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g transform="translate(8, 12)" fill="none" stroke="currentColor">
+          <circle cx="34" cy="34" r="28" stroke-width="2.4"/>
+          <line x1="55" y1="55" x2="68" y2="68" stroke-width="4" stroke-linecap="round"/>
+          <text x="34" y="50" text-anchor="middle" fill="currentColor" stroke="none" style="font-family: Fraunces, 'Times New Roman', serif; font-weight: 600; font-style: italic; font-size: 44px;">?</text>
+          <circle cx="34" cy="56" r="2.2" fill="#B8252B" stroke="none"/>
+        </g>
+        <g transform="translate(96, 0)" fill="currentColor">
+          <text x="0" y="36" style="font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.32em;">WHAT IS YOUR</text>
+          <text x="-1" y="68" style="font-family: Fraunces, 'Times New Roman', serif; font-weight: 600; font-size: 28px;">Evidence<tspan fill="#B8252B">.</tspan></text>
+        </g>
+      </svg>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu <span class="nav-toggle__icon"></span></button>
+    <nav class="nav" id="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About</a>
+      <a href="resources.html">Resources</a>
+      <div class="nav__dropdown" data-nav-dropdown>
+        <a href="polemics.html" class="nav__trigger is-active" aria-haspopup="true">Polemics<svg class="nav__caret" width="9" height="9" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 4l3 3 3-3"/></svg></a>
+        <div class="nav__menu" role="menu">
+          <a href="polemics.html" class="nav__menu-hub" role="menuitem">All polemics &nbsp;<span aria-hidden="true">→</span></a>
+          <div class="nav__menu-group">
+            <span class="nav__menu-eyebrow">Islam</span>
+            <a href="variants.html" class="is-active" role="menuitem">Qur&rsquo;ānic Variants</a>
+          </div>
+        </div>
       </div>
-
-      <nav class="space-x-4">
-        <a href="index.html" class="text-gray-600 hover:text-green-700">Home</a>
-        <a href="resources.html" class="text-gray-600 hover:text-green-700">Resources</a>
-        <a href="variants.html" class="text-green-700 font-semibold underline">Variants</a>
-        <a href="https://buymeacoffee.com/whatyourevidence" target="_blank" 
-           class="bg-yellow-400 text-gray-900 font-semibold px-3 py-2 rounded-lg hover:bg-yellow-500 transition">
-          Support this Ministry
-        </a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero -->
-  <section class="bg-green-100 text-center py-16">
-    <h2 class="text-4xl font-bold text-green-800">Qurʾān Variant Evidence</h2>
-    <!-- <p class="mt-4 text-lg text-gray-700">
-      Manuscript-level documentation of textual variants.
-    </p> -->
-  </section>
-
-  <h2 class="text-2xl font-bold text-green-800 text-center mb-6">
-        Hafs vs Warsh Variants
-    </h2>
-
-  <!-- Tabs -->
-  <section class="py-16 px-4 max-w-6xl mx-auto">
-
-    <!-- Tab Buttons -->
-    <div class="flex flex-wrap justify-center gap-2 mb-8">
-      <button onclick="showTab('A')" id="tab-A" class="tab-btn">Type A</button>
-      <button onclick="showTab('B')" id="tab-B" class="tab-btn">Type B</button>
-      <button onclick="showTab('C')" id="tab-C" class="tab-btn">Type C</button>
-      <button onclick="showTab('D')" id="tab-D" class="tab-btn">Type D</button>
-      <button onclick="showTab('E')" id="tab-E" class="tab-btn">Type E</button>
-      <button onclick="showTab('F')" id="tab-F" class="tab-btn">Type F</button>
-      <button onclick="showTab('G')" id="tab-G" class="tab-btn">Type G</button>
-      <button onclick="showTab('H')" id="tab-H" class="tab-btn">Type H</button>
-      <button onclick="showTab('I')" id="tab-I" class="tab-btn">Type I</button>
-      <button onclick="showTab('J')" id="tab-J" class="tab-btn">Type J</button>
-      <button onclick="showTab('K')" id="tab-K" class="tab-btn">Type K</button>
-    </div>
-
-    <!-- Content -->
-    <div class="bg-white p-6 rounded-lg shadow-lg">
-
-      <div id="content-A" class="variant-content">
-        <img src="quran variants/A.png" class="variant-img" alt="Type A Variant">
-      </div>
-      <div id="content-B" class="variant-content hidden">
-        <img src="quran variants/B.png" class="variant-img" alt="Type B Variant">
-      </div>
-      <div id="content-C" class="variant-content hidden">
-        <img src="quran variants/C.png" class="variant-img" alt="Type C Variant">
-      </div>
-      <div id="content-D" class="variant-content hidden">
-        <img src="quran variants/D.png" class="variant-img" alt="Type D Variant">
-      </div>
-      <div id="content-E" class="variant-content hidden">
-        <img src="quran variants/E.png" class="variant-img" alt="Type E Variant">
-      </div>
-      <div id="content-F" class="variant-content hidden">
-        <img src="quran variants/F.png" class="variant-img" alt="Type F Variant">
-      </div>
-      <div id="content-G" class="variant-content hidden">
-        <img src="quran variants/G.png" class="variant-img" alt="Type G Variant">
-      </div>
-      <div id="content-H" class="variant-content hidden">
-        <img src="quran variants/H.png" class="variant-img" alt="Type H Variant">
-      </div>
-      <div id="content-I" class="variant-content hidden">
-        <img src="quran variants/I.png" class="variant-img" alt="Type I Variant">
-      </div>
-      <div id="content-J" class="variant-content hidden">
-        <img src="quran variants/J.png" class="variant-img" alt="Type J Variant">
-      </div>
-      <div id="content-K" class="variant-content hidden">
-        <img src="quran variants/K.png" class="variant-img" alt="Type K Variant">
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Other Differences -->
-    <section class="py-16 px-4 max-w-6xl mx-auto">
-    <h2 class="text-2xl font-bold text-green-800 text-center mb-6">
-        Other Differences
-    </h2>
-
-    <div class="bg-white p-6 rounded-lg shadow-lg text-gray-700">
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-
-    <div class="grid grid-cols-1 gap-8">
-
-      <img src="quran variants/3-146.jpg" alt="Qur'an Variant 3:146"
-           class="mx-auto rounded-lg shadow-md max-h-[80vh]">
-
-      <img src="quran variants/43-19.jpg" alt="Qur'an Variant 43:19"
-           class="mx-auto rounded-lg shadow-md max-h-[80vh]">
-
-      <img src="quran variants/46-15.jpg" alt="Qur'an Variant 46:15"
-           class="mx-auto rounded-lg shadow-md max-h-[80vh]">
-
-      <img src="quran variants/98-6.jpg" alt="Qur'an Variant 98:6"
-           class="mx-auto rounded-lg shadow-md max-h-[80vh]">
-
-    </div>
-
+      <a href="https://whatisyourevidence.substack.com/" target="_blank" rel="noopener">Substack</a>
+      <a href="shop.html">Shop</a>
+      <a href="bookus.html">Book Us</a>
+      <a href="supportus.html" class="cta">Support</a>
+    </nav>
   </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb" data-reveal>
+      <a href="polemics.html">Polemics</a>
+      <span class="breadcrumb__sep" aria-hidden="true">›</span>
+      <a href="polemics.html">Islam</a>
+      <span class="breadcrumb__sep" aria-hidden="true">›</span>
+      <span aria-current="page">Qur&rsquo;ānic Variants</span>
+    </nav>
+    <span class="eyebrow page-header__eyebrow" data-reveal style="--reveal-delay: 50ms;">Polemics &middot; Islam &middot; Manuscripts</span>
+    <h1 data-reveal style="--reveal-delay: 100ms;">Qur&rsquo;ānic <em class="serif-italic">variant</em> readings.</h1>
+    <p class="page-header__lead" data-reveal style="--reveal-delay: 200ms;">
+      The claim that the Qur&rsquo;ān has been preserved &ldquo;letter for letter&rdquo; is testable. Below are documented variants between transmission lines — primarily Ḥafṣ ʿan ʿĀṣim and Warsh ʿan Nāfiʿ — organised by type, with photographs and references.
+    </p>
+  </div>
+</section>
+
+<section class="variant-section">
+  <div class="container">
+    <div data-reveal>
+      <span class="eyebrow">Section 1</span>
+      <h2 style="margin-top: 18px; font-weight: 400;">Ḥafṣ vs. Warsh — <em class="serif-italic">eleven types</em>.</h2>
+      <p style="max-width: 60ch; color: var(--ink-mute); margin-top: 14px;">Tap a type to load its plate. Each plate compares the same passage as transmitted in the two best-known qirāʾāt today.</p>
     </div>
-    </section>
-    
-<h2>Credit: Dr. Jay Smith, brother Al Fadi, Hatun Tash</h2>
 
-  <!-- Footer -->
-  <footer class="bg-green-800 text-white py-8 text-center">
-    <p class="text-lg">“Test everything; hold fast what is good.” — 1 Thessalonians 5:21</p>
-    <p class="mt-2 text-xs text-gray-200">&copy; 2026 Islam Debunked</p>
-  </footer>
+    <div class="tabs" role="tablist" aria-label="Variant types">
+      <button class="tab-btn is-active" data-tab="A" role="tab">Type&nbsp;A</button>
+      <button class="tab-btn" data-tab="B" role="tab">Type&nbsp;B</button>
+      <button class="tab-btn" data-tab="C" role="tab">Type&nbsp;C</button>
+      <button class="tab-btn" data-tab="D" role="tab">Type&nbsp;D</button>
+      <button class="tab-btn" data-tab="E" role="tab">Type&nbsp;E</button>
+      <button class="tab-btn" data-tab="F" role="tab">Type&nbsp;F</button>
+      <button class="tab-btn" data-tab="G" role="tab">Type&nbsp;G</button>
+      <button class="tab-btn" data-tab="H" role="tab">Type&nbsp;H</button>
+      <button class="tab-btn" data-tab="I" role="tab">Type&nbsp;I</button>
+      <button class="tab-btn" data-tab="J" role="tab">Type&nbsp;J</button>
+      <button class="tab-btn" data-tab="K" role="tab">Type&nbsp;K</button>
+    </div>
 
-  <!-- Styles + Logic -->
-  <style>
-    .tab-btn {
-      padding: 0.5rem 1rem;
-      border-radius: 0.5rem;
-      background-color: #bbf7d0;
-      font-weight: 600;
-    }
-    .tab-btn.active {
-      background-color: #4ade80;
-    }
-    .variant-img {
-      max-height: 80vh;
-      margin: auto;
-      border-radius: 0.5rem;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    }
-  </style>
+    <div class="variant-frame">
+      <div class="variant-content is-active" data-tab-panel="A"><img src="quran variants/A.png" alt="Type A variant"></div>
+      <div class="variant-content" data-tab-panel="B"><img src="quran variants/B.png" alt="Type B variant"></div>
+      <div class="variant-content" data-tab-panel="C"><img src="quran variants/C.png" alt="Type C variant"></div>
+      <div class="variant-content" data-tab-panel="D"><img src="quran variants/D.png" alt="Type D variant"></div>
+      <div class="variant-content" data-tab-panel="E"><img src="quran variants/E.png" alt="Type E variant"></div>
+      <div class="variant-content" data-tab-panel="F"><img src="quran variants/F.png" alt="Type F variant"></div>
+      <div class="variant-content" data-tab-panel="G"><img src="quran variants/G.png" alt="Type G variant"></div>
+      <div class="variant-content" data-tab-panel="H"><img src="quran variants/H.png" alt="Type H variant"></div>
+      <div class="variant-content" data-tab-panel="I"><img src="quran variants/I.png" alt="Type I variant"></div>
+      <div class="variant-content" data-tab-panel="J"><img src="quran variants/J.png" alt="Type J variant"></div>
+      <div class="variant-content" data-tab-panel="K"><img src="quran variants/K.png" alt="Type K variant"></div>
+    </div>
+  </div>
+</section>
 
-  <script>
-    function showTab(letter) {
-      const letters = "ABCDEFGHIJK".split("");
-      letters.forEach(l => {
-        document.getElementById("content-" + l).classList.add("hidden");
-        document.getElementById("tab-" + l).classList.remove("active");
-      });
-      document.getElementById("content-" + letter).classList.remove("hidden");
-      document.getElementById("tab-" + letter).classList.add("active");
-    }
+<section class="variant-section" style="background: var(--paper-warm); border-top: 1px solid var(--rule);">
+  <div class="container">
+    <div data-reveal>
+      <span class="eyebrow">Section 2</span>
+      <h2 style="margin-top: 18px; font-weight: 400;">Other documented <em class="serif-italic">differences</em>.</h2>
+      <p style="max-width: 60ch; color: var(--ink-mute); margin-top: 14px;">Specific āyāt where transmission lines diverge in wording, meaning, or both.</p>
+    </div>
 
-    // Default view
-    showTab("A");
-  </script>
+    <div class="other-variants" style="margin-top: 36px;">
+      <figure data-reveal>
+        <img src="quran variants/3-146.jpg" alt="Qur'an variant Sūrah 3:146">
+        <figcaption>Sūrah 3 · Āl ʿImrān, verse 146</figcaption>
+      </figure>
+      <figure data-reveal>
+        <img src="quran variants/43-19.jpg" alt="Qur'an variant Sūrah 43:19">
+        <figcaption>Sūrah 43 · Az-Zukhruf, verse 19</figcaption>
+      </figure>
+      <figure data-reveal>
+        <img src="quran variants/46-15.jpg" alt="Qur'an variant Sūrah 46:15">
+        <figcaption>Sūrah 46 · Al-Aḥqāf, verse 15</figcaption>
+      </figure>
+      <figure data-reveal>
+        <img src="quran variants/98-6.jpg" alt="Qur'an variant Sūrah 98:6">
+        <figcaption>Sūrah 98 · Al-Bayyinah, verse 6</figcaption>
+      </figure>
+    </div>
 
+    <p class="credit-line">Research drawn from the work of <strong>Dr. Jay Smith</strong>, <strong>Br. Al Fadi</strong>, and <strong>Hatun Tash</strong>.</p>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <div class="cta__grid" data-reveal>
+      <h2>Disagree? <em>Bring the manuscripts.</em></h2>
+      <div>
+        <p>If you can document a transmission that resolves these readings without admitting variation, send it. Photographs of folios, isnād chains, manuscript catalogue entries — primary evidence only.</p>
+        <div class="btn-row">
+          <a class="btn btn--blood" href="mailto:whatyourevidence@gmail.com">Send evidence
+            <svg class="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5"/></svg>
+          </a>
+          <a class="btn" href="resources.html">Other resources</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <a class="brand" href="index.html" aria-label="What Is Your Evidence — home">
+          <svg viewBox="0 0 320 96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g transform="translate(8, 12)" fill="none" stroke="currentColor">
+          <circle cx="34" cy="34" r="28" stroke-width="2.4"/>
+          <line x1="55" y1="55" x2="68" y2="68" stroke-width="4" stroke-linecap="round"/>
+          <text x="34" y="50" text-anchor="middle" fill="currentColor" stroke="none" style="font-family: Fraunces, 'Times New Roman', serif; font-weight: 600; font-style: italic; font-size: 44px;">?</text>
+          <circle cx="34" cy="56" r="2.2" fill="#B8252B" stroke="none"/>
+        </g>
+        <g transform="translate(96, 0)" fill="currentColor">
+          <text x="0" y="36" style="font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.32em;">WHAT IS YOUR</text>
+          <text x="-1" y="68" style="font-family: Fraunces, 'Times New Roman', serif; font-weight: 600; font-size: 28px;">Evidence<tspan fill="#B8252B">.</tspan></text>
+        </g>
+      </svg>
+        </a>
+        <p class="site-footer__motto">
+          &ldquo;Test everything; hold fast what is good.&rdquo;
+          <cite>— 1 Thessalonians 5:21</cite>
+        </p>
+      </div>
+
+      <div>
+        <h5>Pages</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="polemics.html">Polemics</a></li>
+          <li><a href="variants.html">Qur&rsquo;ānic Variants</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5>Engage</h5>
+        <ul>
+          <li><a href="https://whatisyourevidence.substack.com/" target="_blank" rel="noopener">Substack</a></li>
+          <li><a href="bookus.html">Book us</a></li>
+          <li><a href="supportus.html">Support</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="mailto:whatyourevidence@gmail.com">whatyourevidence@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom">
+      <span>&copy; 2026 What Is Your Evidence</span>
+      <span>Soli Deo Gloria</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
 </body>
 </html>

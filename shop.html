@@ -1,79 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shop</title>
-  <link rel="icon" href="logo.png" type="image/png" />
-  <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop — What Is Your Evidence</title>
+<meta name="description" content="Books, tracts, study materials, and merchandise. Coming soon.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/style.css">
 </head>
+<body>
 
-<body class="bg-green-50 text-gray-800 font-sans">
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="index.html" aria-label="What Is Your Evidence — home">
+      <svg viewBox="0 0 320 96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g transform="translate(8, 12)" fill="none" stroke="currentColor">
+          <circle cx="34" cy="34" r="28" stroke-width="2.4"/>
+          <line x1="55" y1="55" x2="68" y2="68" stroke-width="4" stroke-linecap="round"/>
+          <text x="34" y="50" text-anchor="middle" fill="currentColor" stroke="none" style="font-family: Fraunces, 'Times New Roman', serif; font-weight: 600; font-style: italic; font-size: 44px;">?</text>
+          <circle cx="34" cy="56" r="2.2" fill="#B8252B" stroke="none"/>
+        </g>
+        <g transform="translate(96, 0)" fill="currentColor">
+          <text x="0" y="36" style="font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.32em;">WHAT IS YOUR</text>
+          <text x="-1" y="68" style="font-family: Fraunces, 'Times New Roman', serif; font-weight: 600; font-size: 28px;">Evidence<tspan fill="#B8252B">.</tspan></text>
+        </g>
+      </svg>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu <span class="nav-toggle__icon"></span></button>
+    <nav class="nav" id="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About</a>
+      <a href="resources.html">Resources</a>
+      <div class="nav__dropdown" data-nav-dropdown>
+        <a href="polemics.html" class="nav__trigger" aria-haspopup="true">Polemics<svg class="nav__caret" width="9" height="9" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 4l3 3 3-3"/></svg></a>
+        <div class="nav__menu" role="menu">
+          <a href="polemics.html" class="nav__menu-hub" role="menuitem">All polemics &nbsp;<span aria-hidden="true">→</span></a>
+          <div class="nav__menu-group">
+            <span class="nav__menu-eyebrow">Islam</span>
+            <a href="variants.html" role="menuitem">Qur&rsquo;ānic Variants</a>
+          </div>
+        </div>
+      </div>
+      <a href="https://whatisyourevidence.substack.com/" target="_blank" rel="noopener">Substack</a>
+      <a href="shop.html" class="is-active">Shop</a>
+      <a href="bookus.html">Book Us</a>
+      <a href="supportus.html" class="cta">Support</a>
+    </nav>
+  </div>
+</header>
 
-  <!-- Header -->
-  <header class="bg-white shadow">
-    <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
-      <!-- Logo -->
-      <div>
-        <a href="index.html">
-          <img src="logo.png" alt="Christian Caliphate Logo" class="h-20">
+<section class="page-header">
+  <div class="container">
+    <span class="eyebrow page-header__eyebrow" data-reveal>Imprint</span>
+    <h1 data-reveal style="--reveal-delay: 100ms;">Shop &mdash; <em class="serif-italic">opening soon</em>.</h1>
+    <p class="page-header__lead" data-reveal style="--reveal-delay: 200ms;">
+      We&rsquo;re preparing books, tracts, study materials, and merchandise. The aim is the same as everywhere on this site: well-sourced, no fluff, built to be used.
+    </p>
+  </div>
+</section>
+
+<section class="article">
+  <div class="container container--narrow">
+
+    <div style="text-align: center; padding: 40px 0 60px;" data-reveal>
+      <div style="font-family: var(--mono); font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--blood); margin-bottom: 24px;">— In production —</div>
+      <h2 style="font-weight: 400; max-width: 22ch; margin: 0 auto 24px;">Sources of the <em class="serif-italic">Qur&rsquo;ān</em>: a forthcoming book.</h2>
+      <p style="color: var(--ink-mute); font-size: 17px; max-width: 56ch; margin: 0 auto 36px;">
+        An in-depth, primary-source-led exploration of where Qur&rsquo;ānic material comes from — Jewish midrash, apocryphal Christian writings, pre-Islamic Arabian poetry, Zoroastrian motifs — and what that origin means for the claim of divine authorship.
+      </p>
+      <a class="btn" href="mailto:whatyourevidence@gmail.com?subject=Notify%20me%20when%20the%20shop%20opens">
+        Get notified when it&rsquo;s out
+        <svg class="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5"/></svg>
+      </a>
+    </div>
+
+    <hr style="margin: 0 0 60px; border: 0; border-top: 1px solid var(--rule);">
+
+    <div data-reveal>
+      <span class="eyebrow">In the meantime</span>
+      <h3 style="margin: 18px 0 14px;">Free downloads, today.</h3>
+      <p style="color: var(--ink-mute); font-size: 17px; margin-bottom: 28px;">
+        The Resources page already hosts the gospel tract, primary-source compilations, and study notes — free to download, share, and print.
+      </p>
+      <a class="btn btn--ghost" href="resources.html">
+        Browse resources
+        <svg class="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5"/></svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <a class="brand" href="index.html" aria-label="What Is Your Evidence — home">
+          <svg viewBox="0 0 320 96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g transform="translate(8, 12)" fill="none" stroke="currentColor">
+          <circle cx="34" cy="34" r="28" stroke-width="2.4"/>
+          <line x1="55" y1="55" x2="68" y2="68" stroke-width="4" stroke-linecap="round"/>
+          <text x="34" y="50" text-anchor="middle" fill="currentColor" stroke="none" style="font-family: Fraunces, 'Times New Roman', serif; font-weight: 600; font-style: italic; font-size: 44px;">?</text>
+          <circle cx="34" cy="56" r="2.2" fill="#B8252B" stroke="none"/>
+        </g>
+        <g transform="translate(96, 0)" fill="currentColor">
+          <text x="0" y="36" style="font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.32em;">WHAT IS YOUR</text>
+          <text x="-1" y="68" style="font-family: Fraunces, 'Times New Roman', serif; font-weight: 600; font-size: 28px;">Evidence<tspan fill="#B8252B">.</tspan></text>
+        </g>
+      </svg>
         </a>
+        <p class="site-footer__motto">
+          &ldquo;Test everything; hold fast what is good.&rdquo;
+          <cite>— 1 Thessalonians 5:21</cite>
+        </p>
       </div>
 
-      <!-- Navigation -->
-      <nav class="space-x-4">
-        <a href="index.html" class="text-green-700">Home</a>
-        <a href="aboutus.html" class="text-green-700">About Us</a>
-        <a href="resources.html" class="text-green-700">Resources</a>
-        <a href="variants.html" class="text-green-700">Variants</a>
-        <a href="shop.html" class="text-green-700 font-bold">Shop</a>
-        <a href="bookus.html" class="text-green-700">Book Us</a>
-        <a href="supportus.html" class="bg-yellow-400 text-gray-900 font-semibold px-4 py-2 rounded hover:bg-yellow-500 transition">
-            Support Us
-        </a>
-      </nav>
+      <div>
+        <h5>Pages</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="polemics.html">Polemics</a></li>
+          <li><a href="variants.html">Qur&rsquo;ānic Variants</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5>Engage</h5>
+        <ul>
+          <li><a href="https://whatisyourevidence.substack.com/" target="_blank" rel="noopener">Substack</a></li>
+          <li><a href="bookus.html">Book us</a></li>
+          <li><a href="supportus.html">Support</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="mailto:whatyourevidence@gmail.com">whatyourevidence@gmail.com</a></li>
+        </ul>
+      </div>
     </div>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="bg-green-100 text-center py-20">
-    <h2 class="text-4xl font-bold text-green-800">Shop</h2>
-    <p class="mt-4 text-lg text-gray-700">
-      Support the mission through future resources and materials.
-    </p>
-  </section>
+    <div class="site-footer__bottom">
+      <span>&copy; 2026 What Is Your Evidence</span>
+      <span>Soli Deo Gloria</span>
+    </div>
+  </div>
+</footer>
 
-  <!-- Work in Progress Section -->
-  <section class="py-24 px-4 max-w-4xl mx-auto text-center">
-    <h3 class="text-3xl font-semibold text-green-800 mb-6">
-      Coming Soon
-    </h3>
-
-    <p class="text-lg text-gray-700 mb-6">
-      Our shop is currently a work in progress.
-      We’re preparing resources, study materials, and merchandise.
-    </p>
-
-    <p class="text-gray-600">
-      It will be up soon. Thank you for your patience and continued support.
-    </p>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-green-800 text-white py-8 text-center">
-    <p class="text-lg">
-      “Go therefore and make disciples of all nations...” — Matthew 28:19
-    </p>
-    <p class="mt-4 text-sm">
-      📧 Contact:
-      <a href="mailto:whatyourevidence@gmail.com" class="underline hover:text-gray-200">
-        whatyourevidence@gmail.com
-      </a>
-    </p>
-    <p class="mt-2 text-xs text-gray-200">
-      &copy; 2026 Christian Caliphate. All rights reserved.
-    </p>
-  </footer>
-
+<script src="assets/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 96" role="img" aria-label="What Is Your Evidence">
+  <defs>
+    <style>
+      .mark-circle { fill: none; stroke: currentColor; stroke-width: 2.4; }
+      .mark-handle { fill: none; stroke: currentColor; stroke-width: 4; stroke-linecap: round; }
+      .mark-q { font-family: 'Fraunces', 'Times New Roman', serif; font-weight: 600; font-style: italic; font-size: 44px; fill: currentColor; }
+      .word-top { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 9px; letter-spacing: 0.32em; fill: currentColor; text-transform: uppercase; }
+      .word-main { font-family: 'Fraunces', 'Times New Roman', serif; font-weight: 600; font-size: 28px; letter-spacing: 0.01em; fill: currentColor; }
+      .accent { fill: #B8252B; }
+    </style>
+  </defs>
+  <!-- Magnifier mark with question mark -->
+  <g transform="translate(8, 12)">
+    <!-- Lens -->
+    <circle class="mark-circle" cx="34" cy="34" r="28"/>
+    <!-- Handle -->
+    <line class="mark-handle" x1="55" y1="55" x2="68" y2="68"/>
+    <!-- Italic question mark inside the lens -->
+    <text class="mark-q" x="34" y="50" text-anchor="middle">?</text>
+    <!-- Tiny accent dot for the question mark base -->
+    <circle class="accent" cx="34" cy="56" r="2.2"/>
+  </g>
+  <!-- Wordmark -->
+  <g transform="translate(96, 0)">
+    <text class="word-top" x="0" y="36">WHAT IS YOUR</text>
+    <text class="word-main" x="-1" y="68">Evidence<tspan class="accent">.</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="10" fill="#0F1115"/>
+  <circle cx="27" cy="27" r="17" fill="none" stroke="#F4EAD5" stroke-width="3"/>
+  <line x1="40" y1="40" x2="52" y2="52" stroke="#F4EAD5" stroke-width="5" stroke-linecap="round"/>
+  <text x="27" y="36" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="700" font-size="24" fill="#F4EAD5">?</text>
+  <circle cx="27" cy="40.5" r="1.6" fill="#B8252B"/>
+</svg>
