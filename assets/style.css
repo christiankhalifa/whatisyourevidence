@@ -1381,9 +1381,9 @@ blockquote.scripture cite {
 }
 
 /* ============================================================
-   Substack section
+   Buy Me a Coffee section
    ============================================================ */
-.substack {
+.bmc {
   padding: 110px var(--gutter);
   background:
     radial-gradient(ellipse at 70% 30%, rgba(184, 148, 85, 0.18) 0%, transparent 55%),
@@ -1392,7 +1392,7 @@ blockquote.scripture cite {
   border-top: 1px solid rgba(244, 234, 213, 0.08);
   border-bottom: 1px solid rgba(244, 234, 213, 0.08);
 }
-.substack__grid {
+.bmc__grid {
   max-width: var(--maxw);
   margin: 0 auto;
   display: grid;
@@ -1400,10 +1400,10 @@ blockquote.scripture cite {
   gap: 80px;
   align-items: center;
 }
-.substack__copy .eyebrow {
+.bmc__copy .eyebrow {
   color: var(--gold);
 }
-.substack__title {
+.bmc__title {
   font-family: var(--display);
   font-size: clamp(38px, 5.5vw, 64px);
   line-height: 1.02;
@@ -1411,13 +1411,13 @@ blockquote.scripture cite {
   margin-top: 16px;
   letter-spacing: -0.01em;
 }
-.substack__title em {
+.bmc__title em {
   font-style: italic;
   color: var(--paper);
   border-bottom: 2px solid var(--blood);
   padding-bottom: 2px;
 }
-.substack__lead {
+.bmc__lead {
   font-family: var(--display);
   font-size: 19px;
   font-weight: 300;
@@ -1426,14 +1426,14 @@ blockquote.scripture cite {
   margin-top: 22px;
   max-width: 50ch;
 }
-.substack__panel {
+.bmc__panel {
   background: rgba(244, 234, 213, 0.04);
   border: 1px solid rgba(244, 234, 213, 0.12);
   border-radius: 12px;
   padding: 36px 32px;
   position: relative;
 }
-.substack__panel::before {
+.bmc__panel::before {
   content: "";
   position: absolute;
   top: 18px; right: 18px;
@@ -1442,7 +1442,7 @@ blockquote.scripture cite {
   border-radius: 50%;
   box-shadow: 0 0 0 4px rgba(184, 37, 43, 0.18);
 }
-.substack__pulse {
+.bmc__pulse {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -1453,28 +1453,28 @@ blockquote.scripture cite {
   color: var(--gold);
   margin-bottom: 20px;
 }
-.substack__pulse svg { color: #FF6719; } /* Substack brand orange — only accent */
-.substack__pitch {
+.bmc__pulse svg { color: #FFDD00; } /* Buy Me a Coffee brand yellow — only accent */
+.bmc__pitch {
   font-family: var(--display);
   font-size: 17px;
   line-height: 1.5;
   color: rgba(244, 234, 213, 0.86);
   margin-bottom: 24px;
 }
-.substack__panel .btn {
+.bmc__panel .btn {
   color: var(--paper);
   border-color: var(--paper);
 }
-.substack__panel .btn--blood {
+.bmc__panel .btn--blood {
   background: var(--blood);
   border-color: var(--blood);
 }
-.substack__panel .btn--blood:hover {
+.bmc__panel .btn--blood:hover {
   background: var(--paper);
   color: var(--ink);
   border-color: var(--paper);
 }
-.substack__note {
+.bmc__note {
   font-family: var(--mono);
   font-size: 10px;
   letter-spacing: 0.22em;
@@ -1483,12 +1483,12 @@ blockquote.scripture cite {
   margin-top: 14px;
 }
 @media (max-width: 800px) {
-  .substack { padding: 70px var(--gutter); }
-  .substack__grid {
+  .bmc { padding: 70px var(--gutter); }
+  .bmc__grid {
     grid-template-columns: 1fr;
     gap: 36px;
   }
-  .substack__panel { padding: 28px 22px; }
+  .bmc__panel { padding: 28px 22px; }
 }
 
 /* ============================================================
