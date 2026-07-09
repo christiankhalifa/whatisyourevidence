@@ -1,150 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Shop — What Is Your Evidence</title>
-<meta name="description" content="Books, tracts, study materials, and merchandise. Coming soon.">
-<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<link rel="stylesheet" href="assets/style.css">
+<meta name="description" content="Books and resources from What Is Your Evidence. Get 'Thou Shalt Read the Bible — A Concise Guide to the Islamic Dilemma' on Amazon." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
 <header class="site-header">
-  <div class="site-header__inner">
-    <a class="brand" href="index.html" aria-label="What Is Your Evidence — home">
-      <svg viewBox="0 0 320 96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <g transform="translate(8, 12)" fill="none" stroke="currentColor">
-          <circle cx="34" cy="34" r="28" stroke-width="2.4"/>
-          <line x1="55" y1="55" x2="68" y2="68" stroke-width="4" stroke-linecap="round"/>
-          <text x="34" y="50" text-anchor="middle" fill="currentColor" stroke="none" style="font-family: Fraunces, 'Times New Roman', serif; font-weight: 600; font-style: italic; font-size: 44px;">?</text>
-          <circle cx="34" cy="56" r="2.2" fill="#B8252B" stroke="none"/>
-        </g>
-        <g transform="translate(96, 0)" fill="currentColor">
-          <text x="0" y="36" style="font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.32em;">WHAT IS YOUR</text>
-          <text x="-1" y="68" style="font-family: Fraunces, 'Times New Roman', serif; font-weight: 600; font-size: 28px;">Evidence<tspan fill="#B8252B">.</tspan></text>
-        </g>
-      </svg>
-    </a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu <span class="nav-toggle__icon"></span></button>
-    <nav class="nav" id="primary-nav">
-      <a href="index.html">Home</a>
-      <a href="aboutus.html">About</a>
-      <a href="resources.html">Resources</a>
-      <div class="nav__dropdown" data-nav-dropdown>
-        <a href="polemics.html" class="nav__trigger" aria-haspopup="true">Polemics<svg class="nav__caret" width="9" height="9" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 4l3 3 3-3"/></svg></a>
-        <div class="nav__menu" role="menu">
-          <a href="polemics.html" class="nav__menu-hub" role="menuitem">All polemics &nbsp;<span aria-hidden="true">→</span></a>
-          <div class="nav__menu-group">
-            <span class="nav__menu-eyebrow">Islam</span>
-            <a href="variants.html" role="menuitem">Qur&rsquo;ānic Variants</a>
-          </div>
-        </div>
-      </div>
-      <a href="https://buymeacoffee.com/whatisyourevidence/posts" target="_blank" rel="noopener">Blogs</a>
-      <a href="shop.html" class="is-active">Shop</a>
-      <a href="bookus.html">Book Us</a>
-      <a href="supportus.html" class="cta">Support</a>
-    </nav>
-  </div>
+  <nav class="nav wrap" aria-label="Primary">
+    <a class="brand" href="index.html"><span class="q">?</span>WHAT&nbsp;IS&nbsp;YOUR&nbsp;EVIDENCE<span class="dot">.</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span class="bars" aria-hidden="true"><span></span><span></span><span></span></span>MENU</button>
+    <ul class="nav-links" id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+      <li><a href="shop.html" class="active">Shop</a></li>
+      <li><a href="bookus.html">Book&nbsp;Us</a></li>
+      <li><a href="supportus.html">Support</a></li>
+    </ul>
+  </nav>
 </header>
 
-<section class="page-header">
-  <div class="container">
-    <span class="eyebrow page-header__eyebrow" data-reveal>Imprint</span>
-    <h1 data-reveal style="--reveal-delay: 100ms;">Shop &mdash; <em class="serif-italic">opening soon</em>.</h1>
-    <p class="page-header__lead" data-reveal style="--reveal-delay: 200ms;">
-      We&rsquo;re preparing books, tracts, study materials, and merchandise. The aim is the same as everywhere on this site: well-sourced, no fluff, built to be used.
-    </p>
-  </div>
-</section>
+<main>
 
-<section class="article">
-  <div class="container container--narrow">
-
-    <div style="text-align: center; padding: 40px 0 60px;" data-reveal>
-      <div style="font-family: var(--mono); font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--blood); margin-bottom: 24px;">— In production —</div>
-      <h2 style="font-weight: 400; max-width: 22ch; margin: 0 auto 24px;">Sources of the <em class="serif-italic">Qur&rsquo;ān</em>: a forthcoming book.</h2>
-      <p style="color: var(--ink-mute); font-size: 17px; max-width: 56ch; margin: 0 auto 36px;">
-        An in-depth, primary-source-led exploration of where Qur&rsquo;ānic material comes from — Jewish midrash, apocryphal Christian writings, pre-Islamic Arabian poetry, Zoroastrian motifs — and what that origin means for the claim of divine authorship.
+  <section style="padding-block: clamp(3rem,7vw,5rem) clamp(1.5rem,4vw,2.5rem);">
+    <div class="wrap">
+      <p class="eyebrow rise" style="--i:0">The Shop</p>
+      <h1 class="rise" style="--i:1; font-size:clamp(2.4rem,6.5vw,4.4rem); text-transform:uppercase; max-width:16ch;">
+        Resources for a reasoned faith.
+      </h1>
+      <p class="serif-lead rise" style="--i:2; margin-top:1.4rem; max-width:56ch;">
+        Friendly, source-driven tools to test claims and defend the historic Christian faith. More titles are
+        on the way — start here.
       </p>
-      <a class="btn" href="mailto:whatisyourevidence@proton.me?subject=Notify%20me%20when%20the%20shop%20opens">
-        Get notified when it&rsquo;s out
-        <svg class="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5"/></svg>
-      </a>
     </div>
+  </section>
 
-    <hr style="margin: 0 0 60px; border: 0; border-top: 1px solid var(--rule);">
+  <!-- PRODUCT -->
+  <section style="padding-block: 0 clamp(3rem,7vw,5rem);">
+    <div class="wrap">
+      <article class="reveal lift" style="display:grid; grid-template-columns: minmax(0,0.8fr) minmax(0,1.2fr); gap:clamp(2rem,5vw,4rem); align-items:start; background:var(--parchment-2); border:1px solid var(--line); border-radius:6px; padding:clamp(1.5rem,4vw,3rem);" id="product">
+        <div style="justify-self:center;">
+          <img src="assets/book-cover.jpg" alt="Book cover: Thou Shalt Read the Bible — A Concise Guide to the Islamic Dilemma"
+               style="width:min(320px,80vw); border-radius:4px; box-shadow:0 20px 48px rgba(73,20,23,0.28);" />
+        </div>
+        <div>
+          <span class="tag"><span class="num">01</span> Book · Paperback &amp; Kindle</span>
+          <h2 style="margin-top:0.8rem; font-size:clamp(2rem,4.5vw,3.1rem); text-transform:uppercase; max-width:14ch;">Thou Shalt Read the Bible</h2>
+          <p class="mono" style="color:var(--crimson); letter-spacing:0.1em; font-size:0.82rem; text-transform:uppercase; margin:0.8rem 0 0;">A Concise Guide to the Islamic Dilemma</p>
+          <p style="font-family:var(--serif); color:var(--stone); margin:0.55rem 0 0; font-size:1rem;">by <strong style="color:var(--oxblood);">Suresh Paul</strong> &nbsp;·&nbsp; Foreword by Abd Al Fadi</p>
 
-    <div data-reveal>
-      <span class="eyebrow">In the meantime</span>
-      <h3 style="margin: 18px 0 14px;">Free downloads, today.</h3>
-      <p style="color: var(--ink-mute); font-size: 17px; margin-bottom: 28px;">
-        The Resources page already hosts the gospel tract, primary-source compilations, and study notes — free to download, share, and print.
+          <p style="margin-top:1.3rem; max-width:52ch;">
+            The best defense every Christian should learn. This concise guide walks through the dilemma
+            at the center of the debate — the preservation and authority of Scripture — using primary
+            sources, history, and the earliest material witnesses to the faith. Foreword by Abd Al Fadi.
+          </p>
+
+          <ul style="list-style:none; padding:0; margin:1.5rem 0; display:grid; gap:0.7rem;">
+            <li class="mono" style="font-size:0.85rem; display:flex; gap:0.7rem;"><span style="color:var(--crimson);">▪</span> Written for everyday believers — clear, concise, and checkable</li>
+            <li class="mono" style="font-size:0.85rem; display:flex; gap:0.7rem;"><span style="color:var(--crimson);">▪</span> Anchored in primary sources and the historical record</li>
+            <li class="mono" style="font-size:0.85rem; display:flex; gap:0.7rem;"><span style="color:var(--crimson);">▪</span> Features the Megiddo Mosaic (c. AD 230)</li>
+          </ul>
+
+          <div class="cluster" style="margin-top:1.2rem;">
+            <a class="btn btn-primary" href="https://a.co/d/0e7dIKaa" target="_blank" rel="noopener">Buy on Amazon.com</a>
+            <a class="btn btn-primary" href="https://a.co/d/01jL6ECr" target="_blank" rel="noopener">Buy on Amazon.ca</a>
+          </div>
+          <p class="muted mono" style="font-size:0.72rem; margin-top:1rem; letter-spacing:0.04em;">Ships worldwide via Amazon · Kindle available on both stores</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ENDORSEMENTS / EXPERT TESTIMONY -->
+  <section id="endorsements">
+    <div class="wrap">
+      <p class="eyebrow reveal">Endorsements · The Witnesses</p>
+      <h2 class="reveal" style="font-size:clamp(2rem,5vw,3.2rem); text-transform:uppercase; max-width:16ch;">The testimony is in.</h2>
+      <p class="serif-lead reveal" style="margin-top:1.2rem; max-width:56ch;">
+        Scholars, evangelists, and former Muslims who have weighed the argument for themselves.
       </p>
-      <a class="btn btn--ghost" href="resources.html">
-        Browse resources
-        <svg class="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5"/></svg>
-      </a>
-    </div>
 
-  </div>
-</section>
-
-<footer class="site-footer">
-  <div class="container">
-    <div class="site-footer__grid">
-      <div class="site-footer__brand">
-        <a class="brand" href="index.html" aria-label="What Is Your Evidence — home">
-          <svg viewBox="0 0 320 96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <g transform="translate(8, 12)" fill="none" stroke="currentColor">
-          <circle cx="34" cy="34" r="28" stroke-width="2.4"/>
-          <line x1="55" y1="55" x2="68" y2="68" stroke-width="4" stroke-linecap="round"/>
-          <text x="34" y="50" text-anchor="middle" fill="currentColor" stroke="none" style="font-family: Fraunces, 'Times New Roman', serif; font-weight: 600; font-style: italic; font-size: 44px;">?</text>
-          <circle cx="34" cy="56" r="2.2" fill="#B8252B" stroke="none"/>
-        </g>
-        <g transform="translate(96, 0)" fill="currentColor">
-          <text x="0" y="36" style="font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.32em;">WHAT IS YOUR</text>
-          <text x="-1" y="68" style="font-family: Fraunces, 'Times New Roman', serif; font-weight: 600; font-size: 28px;">Evidence<tspan fill="#B8252B">.</tspan></text>
-        </g>
-      </svg>
-        </a>
-        <p class="site-footer__motto">
-          &ldquo;Test everything; hold fast what is good.&rdquo;
-          <cite>— 1 Thessalonians 5:21</cite>
-        </p>
+      <div class="foreword-strip reveal" style="margin-top:2.5rem;">
+        <img src="assets/alfadi_sq.jpg" alt="Abd Al Fadi" />
+        <div>
+          <span class="fw-label">Foreword</span>
+          <p class="fw-name">Abd Al Fadi</p>
+          <p class="fw-role">Ex-Muslim Christian apologist · Author of the foreword</p>
+        </div>
       </div>
 
-      <div>
-        <h5>Pages</h5>
+      <div class="testimony-wall">
+
+        <figure class="tcard reveal lift" style="--i:0;">
+          <span class="mark">&ldquo;</span>
+          <blockquote>I kept hearing reports of its power and effectiveness — that literally hundreds of Muslims, after wrestling honestly with its implications, were leaving Islam. This book marks the first time this important argument has been presented in book form. Readers will find everything they need to understand the Islamic Dilemma and to share it clearly and effectively — a rigorous resource and a model for holding conviction and compassion together.</blockquote>
+          <figcaption class="who">
+            <img class="avatar" src="assets/mike_sq.jpg" alt="Michael Licona" />
+            <span><span class="name">Michael Licona, Ph.D.</span><span class="role">Professor of New Testament Studies · Houston Christian University</span></span>
+          </figcaption>
+        </figure>
+
+        <figure class="tcard reveal lift" style="--i:1;">
+          <span class="mark">&ldquo;</span>
+          <blockquote>As someone who grew up in Iran pursuing martyrdom in jihad before a divine encounter with Jesus Christ, I know firsthand how powerfully the questions in this book can unsettle a sincere Muslim's certainties. Suresh Paul has done the Church a genuine service — exactly the tool Christians need to open a door to the Gospel for their Muslim friends and neighbors.</blockquote>
+          <figcaption class="who">
+            <img class="avatar" src="assets/faridi_sq.jpg" alt="Mohamad Faridi" />
+            <span><span class="name">Mohamad Faridi</span><span class="role">Author, <em>Forsaking My Father's Religion</em> · President, Iranian Christians International</span></span>
+          </figcaption>
+        </figure>
+
+        <figure class="tcard reveal lift" style="--i:2;">
+          <span class="mark">&ldquo;</span>
+          <blockquote>What a pleasant surprise! This small book is easy to read and easy to understand. It reveals what appears to be a deeply troubling contradiction in the Qur'an. I highly recommend it for any Christian wanting to start conversations with a Muslim friend.</blockquote>
+          <figcaption class="who">
+            <img class="avatar" src="assets/dangibson_sq.jpg" alt="Dan Gibson" />
+            <span><span class="name">Dan Gibson</span><span class="role">Author, <em>Let the Stones Speak</em> &amp; <em>Early Islamic Qiblas</em></span></span>
+          </figcaption>
+        </figure>
+
+        <figure class="tcard reveal lift" style="--i:3;">
+          <span class="mark">&ldquo;</span>
+          <blockquote>&ldquo;The Bible has been corrupted&rdquo; is the objection that meets us at the very threshold. And yet the Qur'an itself speaks with deep regard for the Scriptures that came before it. This short and lucid book gathers those threads with clarity — a resource both accessible and quietly powerful, a faithful companion in the joyful task of bearing witness to the Triune God.</blockquote>
+          <figcaption class="who">
+            <img class="avatar" src="assets/hatuntash_sq.jpg" alt="Hatun Tash" />
+            <span><span class="name">Hatun Tash</span><span class="role">Director · DCCI Ministries</span></span>
+          </figcaption>
+        </figure>
+
+        <figure class="tcard reveal lift" style="--i:4;">
+          <span class="mark">&ldquo;</span>
+          <blockquote>In a charitable and accessible style, Suresh Paul opens the pages of the Quran in a way that allows the Muslim and Christian reader alike to see what the Quran really says about the Bible. A practical tool for those frequent discussions about the Bible's reliability.</blockquote>
+          <figcaption class="who">
+            <span class="avatar-mono" aria-hidden="true">DR</span>
+            <span><span class="name">Doug Rempel</span><span class="role">National Director · ReachAcross Canada</span></span>
+          </figcaption>
+        </figure>
+
+        <figure class="tcard reveal lift" style="--i:5;">
+          <span class="mark">&ldquo;</span>
+          <blockquote>The Islamic Dilemma is the Achilles' heel of Islam and the Qur'an, and has proven to be a watertight and formidable argument. Suresh's book has made this argument accessible to the reader and given the Christian a powerful tool to use in evangelism to Muslims.</blockquote>
+          <figcaption class="who">
+            <img class="avatar" src="assets/tony_costa_sq.jpg" alt="Tony Costa" />
+            <span><span class="name">Tony Costa, Ph.D.</span><span class="role">Apologist, Pastor &amp; Instructor · University of Toronto</span></span>
+          </figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MORE COMING -->
+  <section class="section-dark center">
+    <div class="wrap" style="max-width:640px;">
+      <p class="eyebrow reveal" style="justify-content:center;">Coming Soon</p>
+      <h2 class="reveal" style="font-size:clamp(1.8rem,4.5vw,2.8rem); text-transform:uppercase;">More titles in the works.</h2>
+      <p class="reveal" style="margin-top:1rem; color:var(--parchment); max-width:46ch; margin-inline:auto;">
+        Want to know when the next resource drops? Send us a note and we'll keep you posted.
+      </p>
+      <a class="btn btn-gold reveal" href="mailto:whatisyourevidence@proton.me?subject=Notify%20me%20about%20new%20resources" style="margin-top:1.6rem;">Email us</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="footer-verse">“Test everything; hold fast what is good.” — 1 Thessalonians 5:21</p>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a class="brand" href="index.html" style="color:var(--parchment); font-size:1.05rem;"><span class="q" style="color:var(--gold);">?</span>WHAT&nbsp;IS&nbsp;YOUR&nbsp;EVIDENCE<span class="dot" style="color:var(--gold);">.</span></a>
+        <p style="margin-top:1rem; max-width:34ch; color:rgba(239,231,214,0.82);">A Christian apologetics ministry exploring life's biggest questions with honesty, evidence, and love.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="aboutus.html">About</a></li>
-          <li><a href="resources.html">Resources</a></li>
-          <li><a href="polemics.html">Polemics</a></li>
-          <li><a href="variants.html">Qur&rsquo;ānic Variants</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="shop.html">Shop</a></li>
         </ul>
       </div>
-
-      <div>
-        <h5>Engage</h5>
+      <div class="footer-col">
+        <h4>Engage</h4>
         <ul>
-          <li><a href="https://buymeacoffee.com/whatisyourevidence/posts" target="_blank" rel="noopener">Blogs</a></li>
           <li><a href="bookus.html">Book us</a></li>
           <li><a href="supportus.html">Support</a></li>
-          <li><a href="shop.html">Shop</a></li>
+          <li><a href="https://buymeacoffee.com/whatisyourevidence" target="_blank" rel="noopener">Buy Me a Coffee</a></li>
           <li><a href="mailto:whatisyourevidence@proton.me">whatisyourevidence@proton.me</a></li>
         </ul>
       </div>
     </div>
-
-    <div class="site-footer__bottom">
-      <span>&copy; 2026 What Is Your Evidence</span>
-      <span>Soli Deo Gloria</span>
+    <div class="footer-bottom">
+      <span>© 2026 What Is Your Evidence · Soli Deo Gloria</span>
+      <span>Questions welcome.</span>
     </div>
   </div>
 </footer>
 
-<script src="assets/main.js"></script>
+<script src="site.js"></script>
+<style>@media (max-width:780px){ #product{ grid-template-columns:1fr !important; } }</style>
 </body>
 </html>

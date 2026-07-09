@@ -1,176 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Book Us — What Is Your Evidence</title>
-<meta name="description" content="Request a speaker for your church, university, conference, or event. We engage the gospel, apologetics, and the evidence — in person.">
-<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<link rel="stylesheet" href="assets/style.css">
+<meta name="description" content="Invite What Is Your Evidence to speak, debate, or respond in writing. Bring your evidence." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<style>
+  .field { display:block; margin-bottom:1.25rem; }
+  .field label {
+    display:block; font-family:var(--mono); font-size:0.72rem; font-weight:600;
+    letter-spacing:0.12em; text-transform:uppercase; color:var(--oxblood); margin-bottom:0.5rem;
+  }
+  .field .req { color:var(--crimson); }
+  .field input, .field select, .field textarea {
+    width:100%; font-family:var(--serif); font-size:1rem; color:var(--ink);
+    background:var(--parchment); border:1.5px solid var(--line); border-radius:4px;
+    padding:0.8rem 0.9rem; transition:border-color .15s, box-shadow .15s;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus {
+    outline:none; border-color:var(--oxblood); box-shadow:0 0 0 3px rgba(214,156,41,0.28);
+  }
+  .field textarea { min-height:150px; resize:vertical; }
+  .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:0 1.25rem; }
+  .form-note { font-family:var(--mono); font-size:0.72rem; color:var(--stone); letter-spacing:0.03em; }
+  @media (max-width:600px){ .grid-2{ grid-template-columns:1fr; } }
+</style>
 </head>
 <body>
 
 <header class="site-header">
-  <div class="site-header__inner">
-    <a class="brand" href="index.html" aria-label="What Is Your Evidence — home">
-      <svg viewBox="0 0 320 96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <g transform="translate(8, 12)" fill="none" stroke="currentColor">
-          <circle cx="34" cy="34" r="28" stroke-width="2.4"/>
-          <line x1="55" y1="55" x2="68" y2="68" stroke-width="4" stroke-linecap="round"/>
-          <text x="34" y="50" text-anchor="middle" fill="currentColor" stroke="none" style="font-family: Fraunces, 'Times New Roman', serif; font-weight: 600; font-style: italic; font-size: 44px;">?</text>
-          <circle cx="34" cy="56" r="2.2" fill="#B8252B" stroke="none"/>
-        </g>
-        <g transform="translate(96, 0)" fill="currentColor">
-          <text x="0" y="36" style="font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.32em;">WHAT IS YOUR</text>
-          <text x="-1" y="68" style="font-family: Fraunces, 'Times New Roman', serif; font-weight: 600; font-size: 28px;">Evidence<tspan fill="#B8252B">.</tspan></text>
-        </g>
-      </svg>
-    </a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu <span class="nav-toggle__icon"></span></button>
-    <nav class="nav" id="primary-nav">
-      <a href="index.html">Home</a>
-      <a href="aboutus.html">About</a>
-      <a href="resources.html">Resources</a>
-      <div class="nav__dropdown" data-nav-dropdown>
-        <a href="polemics.html" class="nav__trigger" aria-haspopup="true">Polemics<svg class="nav__caret" width="9" height="9" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 4l3 3 3-3"/></svg></a>
-        <div class="nav__menu" role="menu">
-          <a href="polemics.html" class="nav__menu-hub" role="menuitem">All polemics &nbsp;<span aria-hidden="true">→</span></a>
-          <div class="nav__menu-group">
-            <span class="nav__menu-eyebrow">Islam</span>
-            <a href="variants.html" role="menuitem">Qur&rsquo;ānic Variants</a>
-          </div>
-        </div>
-      </div>
-      <a href="https://buymeacoffee.com/whatisyourevidence/posts" target="_blank" rel="noopener">Blogs</a>
-      <a href="shop.html">Shop</a>
-      <a href="bookus.html" class="is-active">Book Us</a>
-      <a href="supportus.html" class="cta">Support</a>
-    </nav>
-  </div>
+  <nav class="nav wrap" aria-label="Primary">
+    <a class="brand" href="index.html"><span class="q">?</span>WHAT&nbsp;IS&nbsp;YOUR&nbsp;EVIDENCE<span class="dot">.</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span class="bars" aria-hidden="true"><span></span><span></span><span></span></span>MENU</button>
+    <ul class="nav-links" id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="bookus.html" class="active">Book&nbsp;Us</a></li>
+      <li><a href="supportus.html">Support</a></li>
+    </ul>
+  </nav>
 </header>
 
-<section class="page-header">
-  <div class="container">
-    <span class="eyebrow page-header__eyebrow" data-reveal>Speaking &middot; Debate &middot; Teaching</span>
-    <h1 data-reveal style="--reveal-delay: 100ms;">Book us for your <em class="serif-italic">event</em>.</h1>
-    <p class="page-header__lead" data-reveal style="--reveal-delay: 200ms;">
-      Churches. Universities. Conferences. Public dialogues. We come prepared, we cite our sources, and we let the audience scrutinise the case.
-    </p>
-  </div>
-</section>
+<main>
 
-<section class="article">
-  <div class="container container--narrow">
-
-    <div class="book-cta" data-reveal>
-      <div>
-        <span class="eyebrow">Step 1</span>
-        <h3 style="margin-top: 16px;">Submit a request</h3>
-        <p>Use the Google form to share event type, audience size, location, dates, and topic. The more specific you are, the faster we can confirm.</p>
-      </div>
-      <div class="book-cta__action">
-        <a class="btn btn--blood" href="https://forms.gle/CS19q3n3eRPaGxqw9" target="_blank" rel="noopener">
-          Open the request form
-          <svg class="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5"/></svg>
-        </a>
-        <a class="btn btn--ghost" href="mailto:whatisyourevidence@proton.me">Email instead</a>
-      </div>
-    </div>
-
-    <div data-reveal style="margin-top: 56px;">
-      <span class="eyebrow">What we cover</span>
-      <h3 style="margin-top: 18px;">Topics we&rsquo;ve been booked for</h3>
-
-      <ul class="checklist">
-        <li>The historical case for the resurrection of Jesus</li>
-        <li>Qur&rsquo;ānic textual variants &amp; transmission</li>
-        <li>Christianity vs Islam: God, Jesus, salvation</li>
-        <li>Non-Christian sources for Jesus, AD 1–200</li>
-        <li>Sharing the gospel with Muslim friends</li>
-        <li>Open Q&amp;A &amp; moderated dialogue</li>
-      </ul>
-    </div>
-
-    <div data-reveal style="margin-top: 56px;">
-      <span class="eyebrow">Logistics</span>
-      <h3 style="margin-top: 18px;">Honorarium &amp; travel</h3>
-      <p style="color: var(--ink-mute); font-size: 17px; line-height: 1.6;">
-        For questions about availability, honorarium, travel logistics, or moderated debates, contact us directly at <a href="mailto:whatisyourevidence@proton.me" style="color: var(--blood); text-decoration: underline; text-underline-offset: 3px;">whatisyourevidence@proton.me</a>. We look forward to partnering with you to share the gospel — clearly, charitably, and with evidence.
+  <section style="padding-block: clamp(3rem,7vw,5rem) clamp(1.5rem,4vw,2.5rem);">
+    <div class="wrap" style="max-width:900px;">
+      <p class="eyebrow rise" style="--i:0">Get In Touch</p>
+      <h1 class="rise" style="--i:1; font-size:clamp(2.4rem,6.5vw,4.4rem); text-transform:uppercase; max-width:14ch;">
+        Let's talk. <span style="color:var(--crimson);">We'd love to.</span>
+      </h1>
+      <p class="serif-lead rise" style="--i:2; margin-top:1.4rem; max-width:58ch;">
+        A talk, a Q&amp;A, a friendly dialogue, or a written reply — whatever you have in mind, tell us
+        below and we'll get back to you from
+        <span class="mono" style="font-size:0.92em;">whatisyourevidence@proton.me</span>.
       </p>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="cta">
-  <div class="container">
-    <div class="cta__grid" data-reveal>
-      <h2>Looking for a <em>moderated debate?</em></h2>
-      <div>
-        <p>If you represent a counter-position and want to engage formally, we welcome it. Public, recorded, with a moderator and time limits. Bring your evidence; we&rsquo;ll bring ours.</p>
-        <div class="btn-row">
-          <a class="btn btn--blood" href="mailto:whatisyourevidence@proton.me?subject=Debate%20request">Propose a debate
-            <svg class="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5"/></svg>
-          </a>
-        </div>
+  <section style="padding-block:0 clamp(3rem,7vw,5rem);">
+    <div class="wrap" style="max-width:900px;">
+      <div style="display:grid; grid-template-columns:1.4fr 0.9fr; gap:clamp(2rem,5vw,3.5rem); align-items:start;" class="form-wrap">
+
+        <form id="bookForm" class="reveal" novalidate>
+          <div class="grid-2">
+            <div class="field">
+              <label for="name">Your name <span class="req">*</span></label>
+              <input type="text" id="name" name="name" required autocomplete="name" />
+            </div>
+            <div class="field">
+              <label for="email">Email <span class="req">*</span></label>
+              <input type="email" id="email" name="email" required autocomplete="email" />
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="org">Church / organization</label>
+              <input type="text" id="org" name="org" autocomplete="organization" />
+            </div>
+            <div class="field">
+              <label for="type">Type of request <span class="req">*</span></label>
+              <select id="type" name="type" required>
+                <option value="" selected disabled>Choose one…</option>
+                <option>Speaking engagement</option>
+                <option>Public dialogue or debate</option>
+                <option>Written response</option>
+                <option>Podcast / interview</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="date">Preferred date</label>
+              <input type="date" id="date" name="date" />
+            </div>
+            <div class="field">
+              <label for="format">Format</label>
+              <select id="format" name="format">
+                <option value="" selected disabled>Choose one…</option>
+                <option>In person</option>
+                <option>Online</option>
+                <option>Either</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">What's on your mind? <span class="req">*</span></label>
+            <textarea id="message" name="message" required placeholder="Tell us the topic, the occasion, or just the question you've been thinking about."></textarea>
+          </div>
+
+          <div class="cluster">
+            <button type="submit" class="btn btn-primary">Send request</button>
+            <span class="form-note" id="formStatus" role="status" aria-live="polite"></span>
+          </div>
+          <p class="form-note" style="margin-top:1rem;">Pressing “Send request” opens your email app with everything filled in, addressed to us. Prefer to write directly? <a href="mailto:whatisyourevidence@proton.me">Email us here.</a></p>
+        </form>
+
+        <aside class="reveal" style="background:var(--oxblood); color:var(--parchment); border-radius:6px; padding:1.8rem;">
+          <span class="tag" style="color:var(--gold);"><span class="num" style="color:var(--gold);">♥</span> How we approach it</span>
+          <h3 style="color:var(--parchment); margin-top:0.8rem; font-size:1.5rem;">A conversation, not a contest.</h3>
+          <p style="margin-top:0.8rem; color:rgba(239,231,214,0.9); font-size:0.98rem;">
+            We come in good faith, go to the primary sources, and treat every person with respect.
+            Ask us anything — no question is off the table, and none is unwelcome.
+          </p>
+          <hr style="border:0; height:1px; background:rgba(239,231,214,0.2); margin:1.5rem 0;" />
+          <p class="mono" style="font-size:0.78rem; letter-spacing:0.08em; color:var(--gold-soft);">DIRECT LINE</p>
+          <p style="margin-top:0.4rem;"><a href="mailto:whatisyourevidence@proton.me" style="color:var(--parchment);">whatisyourevidence@proton.me</a></p>
+        </aside>
+
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+</main>
 
 <footer class="site-footer">
-  <div class="container">
-    <div class="site-footer__grid">
-      <div class="site-footer__brand">
-        <a class="brand" href="index.html" aria-label="What Is Your Evidence — home">
-          <svg viewBox="0 0 320 96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <g transform="translate(8, 12)" fill="none" stroke="currentColor">
-          <circle cx="34" cy="34" r="28" stroke-width="2.4"/>
-          <line x1="55" y1="55" x2="68" y2="68" stroke-width="4" stroke-linecap="round"/>
-          <text x="34" y="50" text-anchor="middle" fill="currentColor" stroke="none" style="font-family: Fraunces, 'Times New Roman', serif; font-weight: 600; font-style: italic; font-size: 44px;">?</text>
-          <circle cx="34" cy="56" r="2.2" fill="#B8252B" stroke="none"/>
-        </g>
-        <g transform="translate(96, 0)" fill="currentColor">
-          <text x="0" y="36" style="font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.32em;">WHAT IS YOUR</text>
-          <text x="-1" y="68" style="font-family: Fraunces, 'Times New Roman', serif; font-weight: 600; font-size: 28px;">Evidence<tspan fill="#B8252B">.</tspan></text>
-        </g>
-      </svg>
-        </a>
-        <p class="site-footer__motto">
-          &ldquo;Test everything; hold fast what is good.&rdquo;
-          <cite>— 1 Thessalonians 5:21</cite>
-        </p>
+  <div class="wrap">
+    <p class="footer-verse">“Test everything; hold fast what is good.” — 1 Thessalonians 5:21</p>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a class="brand" href="index.html" style="color:var(--parchment); font-size:1.05rem;"><span class="q" style="color:var(--gold);">?</span>WHAT&nbsp;IS&nbsp;YOUR&nbsp;EVIDENCE<span class="dot" style="color:var(--gold);">.</span></a>
+        <p style="margin-top:1rem; max-width:34ch; color:rgba(239,231,214,0.82);">A Christian apologetics ministry exploring life's biggest questions with honesty, evidence, and love.</p>
       </div>
-
-      <div>
-        <h5>Pages</h5>
+      <div class="footer-col">
+        <h4>Pages</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="aboutus.html">About</a></li>
-          <li><a href="resources.html">Resources</a></li>
-          <li><a href="polemics.html">Polemics</a></li>
-          <li><a href="variants.html">Qur&rsquo;ānic Variants</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="shop.html">Shop</a></li>
         </ul>
       </div>
-
-      <div>
-        <h5>Engage</h5>
+      <div class="footer-col">
+        <h4>Engage</h4>
         <ul>
-          <li><a href="https://buymeacoffee.com/whatisyourevidence/posts" target="_blank" rel="noopener">Blogs</a></li>
           <li><a href="bookus.html">Book us</a></li>
           <li><a href="supportus.html">Support</a></li>
-          <li><a href="shop.html">Shop</a></li>
+          <li><a href="https://buymeacoffee.com/whatisyourevidence" target="_blank" rel="noopener">Buy Me a Coffee</a></li>
           <li><a href="mailto:whatisyourevidence@proton.me">whatisyourevidence@proton.me</a></li>
         </ul>
       </div>
     </div>
-
-    <div class="site-footer__bottom">
-      <span>&copy; 2026 What Is Your Evidence</span>
-      <span>Soli Deo Gloria</span>
+    <div class="footer-bottom">
+      <span>© 2026 What Is Your Evidence · Soli Deo Gloria</span>
+      <span>Questions welcome.</span>
     </div>
   </div>
 </footer>
 
-<script src="assets/main.js"></script>
+<script src="site.js"></script>
+<script>
+(function(){
+  var form = document.getElementById('bookForm');
+  var status = document.getElementById('formStatus');
+  if(!form) return;
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(!form.checkValidity()){ form.reportValidity(); return; }
+    var v = function(id){ var el=document.getElementById(id); return el && el.value ? el.value : '—'; };
+    var subject = 'Booking request: ' + v('type') + ' — ' + v('name');
+    var lines = [
+      'Name: ' + v('name'),
+      'Email: ' + v('email'),
+      'Church / organization: ' + v('org'),
+      'Type of request: ' + v('type'),
+      'Preferred date: ' + v('date'),
+      'Format: ' + v('format'),
+      '',
+      'Details:',
+      v('message')
+    ];
+    var href = 'mailto:whatisyourevidence@proton.me'
+             + '?subject=' + encodeURIComponent(subject)
+             + '&body='    + encodeURIComponent(lines.join('\n'));
+    window.location.href = href;
+    status.textContent = 'Opening your email app…';
+  });
+})();
+</script>
+<style>@media (max-width:760px){ .form-wrap{ grid-template-columns:1fr !important; } }</style>
 </body>
 </html>
